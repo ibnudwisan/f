@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> <!-- Mencegah zoom -->
+    <title>Ibnu Dwi Santosa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link Font Awesome -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #00bfff, #1e90ff); /* Gradasi dari biru muda ke biru */
+            color: #000; /* Warna teks */
+            transition: background 0.5s ease; /* Transisi halus untuk perubahan latar belakang */
+        }
+
+        .viewCounter {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+            margin: 10px auto; /* Margin atas dan bawah */
+            max-width: 300px; /* Lebar maksimum */
+            transition: background 0.3s ease; /* Transisi halus untuk latar belakang */
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Bayangan untuk efek kedalaman */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease; /* Transisi halus untuk warna tautan */
+        }
+
+        nav ul li a:hover {
+            color: #ffa500; /* Warna saat hover */
+        }
+
+        .container {
+            max-width: 800px; /* Lebar maksimum untuk tampilan desktop */
+            margin: 20px auto;
+            padding: 0 20px;
+            transition: padding 0.3s ease; /* Transisi halus untuk padding */
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        .about, .contact, .other {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease; /* Transisi halus untuk bayangan */
+        }
+
+        .about img {
+            width: 100px; /* Ukuran gambar lebih kecil */
+            height: 100px; /* Menjaga proporsi gambar */
+            border-radius: 50%; /* Menjaga gambar tetap bulat */
+            display: block;
+            margin: 0 auto 30px auto; /* Jarak gambar dari teks */
+            transition: transform 0.3s ease; /* Transisi halus untuk gambar */
+        }
+
+        .about img:hover {
+            transform: scale(1.1); /* Efek zoom saat hover */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Bayangan untuk footer */
+        }
+
+        .eye-icon {
+            margin-right: 5px; /* Jarak antara ikon dan teks */
+            vertical-align: middle; /* Vertically align icon with text */
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 10px; /* Kurangi padding di perangkat kecil */
+            }
+
+            .about img {
+                width: 80px; /* Ukuran gambar lebih kecil di perangkat kecil */
+                height: 80px; /* Menjaga proporsi gambar */
+            }
+
+            .viewCounter {
+                max-width: 80%; /* Lebar maksimum untuk view counter di perangkat kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#other">Lainnya</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="viewCounter"> 
+            <i class="fas fa-eye eye-icon"></i> <!-- Ikon mata dari Font Awesome -->
+            Jumlah Kunjungan: <span id="visitCount">0</span>
+        </div> <!-- View Counter ditempatkan di sini -->
+
+        <section id="about" class="about">
+            <h2>Tentang Developer</h2>
+            <img src="Ibnu.jpg" alt="Ibnu"style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 3px solid transparent;">
+            <h3>Ibnu Dwi</h3>
+            <p>Saya seorang developer aplikasi yang mengkhususkan diri dalam bahasa pemrograman Java untuk android development. Saya
+            memiliki keahlian dalam menciptakan solusi perangkat lunak yang robust dan efisien. Java dikenal sebagai
+            salah satu bahasa pemrograman yang paling populer dan digunakan secara luas, berkat kemampuannya untuk berjalan di
+            berbagai platform berkat konsep "write once, run anywhere".</p>
+            <p>Saya juga beralih ke pengembangan aplikasi mobile dengan menggunakan Android SDK, yang memungkinkan saya untuk membuat
+            aplikasi yang dapat diakses oleh jutaan pengguna di seluruh dunia.</p>
+            <p>Dengan semangat untuk terus belajar dan beradaptasi dengan teknologi baru, saya selalu mencari kesalahan pada bug-bug
+            yang saya temukan untuk meningkatkan keterampilan saya sebagai developer aplikasi Java, walaupun secara otodidak.</p>
+        </section>
+
+        <section id="other" class="other">
+            <h2>Informasi</h2>
+            <p>Nama: Ibnu dwi </p>
+            <p>Tanggal lahir: 20 october 2009</p>
+            <p>Hobi: Ngetik/ Ngoding</p>
+            <p>cita-cita: Developer</p>
+            <p>Alamat: Gang Sunan Bonang, RT/RW/006/004, Tegalsari, Kec. Kandeman, Kabupaten Batang, Jawa Tengah 51261</p>
+           
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Kontak</h2>
+            <p>Email: ibnudwisan@gmail.com</p>
+            <p>Telepon: +62 821 3678 3758</p>
+            <p><a href="https://www.facebook.com/share/Qa677pGi3hCKcEJE/" target="_top">fb.me</a></p>
+            <p><a href="https://wa.me/6282136783758" target="_blank">Hubungi saya di WhatsApp</a></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Profil Gw Wkwk. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Cek apakah 'visitCount' sudah ada di localStorage
+        let visitCount = localStorage.getItem('visitCount');
+
+        // Jika belum ada, set ke 0
+        if (!visitCount) {
+            visitCount = 0;
+        } else {
+            visitCount = parseInt(visitCount);
+        }
+
+        // Increment kunjungan
+        visitCount++;
+
+        // Tampilkan kunjungan di elemen dengan ID 'visitCount'
+        document.getElementById('visitCount').textContent = visitCount;
+
+        // Simpan jumlah kunjungan ke localStorage
+        localStorage.setItem('visitCount', visitCount);
+    </script>
+</body>
+</html>
