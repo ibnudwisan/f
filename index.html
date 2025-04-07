@@ -5,130 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> <!-- Mencegah zoom -->
     <title>Ibnu Dwi Santosa</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link Font Awesome -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #00bfff, #1e90ff); /* Gradasi dari biru muda ke biru */
-            color: #000; /* Warna teks */
-            transition: background 0.5s ease; /* Transisi halus untuk perubahan latar belakang */
-        }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #00bfff, #1e90ff);
+      /* Gradasi dari biru muda ke biru */
+      color: #000;
+      /* Warna teks */
+      transition: background 0.5s ease;
+      /* Transisi halus untuk perubahan latar belakang */
+    }
 
-        .viewCounter {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 14px;
-            text-align: center;
-            margin: 10px auto; /* Margin atas dan bawah */
-            max-width: 300px; /* Lebar maksimum */
-            transition: background 0.3s ease; /* Transisi halus untuk latar belakang */
-        }
+    .viewCounter {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      text-align: center;
+      margin: 10px auto;
+      /* Margin atas dan bawah */
+      max-width: 300px;
+      /* Lebar maksimum */
+      transition: background 0.3s ease;
+      /* Transisi halus untuk latar belakang */
+    }
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px 0;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Bayangan untuk efek kedalaman */
-        }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      /* Bayangan untuk efek kedalaman */
+    }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
 
-        nav ul li {
-            display: inline-block;
-            margin: 0 15px;
-        }
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease; /* Transisi halus untuk warna tautan */
-        }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      /* Transisi halus untuk warna tautan */
+    }
 
-        nav ul li a:hover {
-            color: #ffa500; /* Warna saat hover */
-        }
+    nav ul li a:hover {
+      color: #ffa500;
+      /* Warna saat hover */
+    }
 
-        .container {
-            max-width: 800px; /* Lebar maksimum untuk tampilan desktop */
-            margin: 20px auto;
-            padding: 0 20px;
-            transition: padding 0.3s ease; /* Transisi halus untuk padding */
-        }
+    .container {
+      max-width: 800px;
+      /* Lebar maksimum untuk tampilan desktop */
+      margin: 20px auto;
+      padding: 0 20px;
+      transition: padding 0.3s ease;
+      /* Transisi halus untuk padding */
+    }
 
-          .update-info {
-            font-size: 20px; /* Ukuran font */
-            color: #555555; /* Warna teks */
-            margin-top: 20px; /* Jarak atas */
-        }
+    .update-info {
+      font-size: 20px;
+      /* Ukuran font */
+      color: #555555;
+      /* Warna teks */
+      margin-top: 20px;
+      /* Jarak atas */
+    }
 
-        .update-info i {
-          margin-right: 20px;
-        }
+    .update-info i {
+      margin-right: 20px;
+    }
 
-        section {
-            margin: 20px 0;
-        }
+    section {
+      margin: 20px 0;
+    }
 
-        .about, .contact, .other {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease; /* Transisi halus untuk bayangan */
-        }
+    .about,
+    .contact,
+    .other {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+      /* Transisi halus untuk bayangan */
+    }
 
-        .about img {
-            width: 100px; /* Ukuran gambar lebih kecil */
-            height: 100px; /* Menjaga proporsi gambar */
-            border-radius: 50%; /* Menjaga gambar tetap bulat */
-            display: block;
-            margin: 0 auto 30px auto; /* Jarak gambar dari teks */
-            transition: transform 0.3s ease; /* Transisi halus untuk gambar */
-        }
+    .about img {
+      width: 100px;
+      /* Ukuran gambar lebih kecil */
+      height: 100px;
+      /* Menjaga proporsi gambar */
+      border-radius: 50%;
+      /* Menjaga gambar tetap bulat */
+      display: block;
+      margin: 0 auto 30px auto;
+      /* Jarak gambar dari teks */
+      transition: transform 0.3s ease;
+      /* Transisi halus untuk gambar */
+    }
 
-        .about img:hover {
-            transform: scale(1.1); /* Efek zoom saat hover */
-        }
+    .about img:hover {
+      transform: scale(1.1);
+      /* Efek zoom saat hover */
+    }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Bayangan untuk footer */
-        }
+    main {
+      flex: 1;
+    }
 
-        .eye-icon {
-            margin-right: 5px; /* Jarak antara ikon dan teks */
-            vertical-align: middle; /* Vertically align icon with text */
-        }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+      /* Bayangan untuk footer */
+    }
 
-        /* Responsif */
-        @media (max-width: 600px) {
-            .container {
-                padding: 0 10px; /* Kurangi padding di perangkat kecil */
-            }
+    .eye-icon {
+      margin-right: 5px;
+      /* Jarak antara ikon dan teks */
+      vertical-align: middle;
+      /* Vertically align icon with text */
+    }
 
-            .about img {
-                width: 80px; /* Ukuran gambar lebih kecil di perangkat kecil */
-                height: 80px; /* Menjaga proporsi gambar */
-            }
+    /* Responsif */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0 10px;
+        /* Kurangi padding di perangkat kecil */
+      }
 
-            .viewCounter {
-                max-width: 80%; /* Lebar maksimum untuk view counter di perangkat kecil */
-            }
-        }
-    </style>
+      .about img {
+        width: 80px;
+        /* Ukuran gambar lebih kecil di perangkat kecil */
+        height: 80px;
+        /* Menjaga proporsi gambar */
+      }
+
+      .viewCounter {
+        max-width: 80%;
+        /* Lebar maksimum untuk view counter di perangkat kecil */
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -141,8 +175,8 @@
             </ul>
         </nav>
     </header>
-
-      <div class="container">
+    <main>
+      <class="container">
         <div class="viewCounter">
           <i class="fas fa-sync"></i> Terakhir Diperbarui: 7 April 2025 (22:10)
         </div>
@@ -186,7 +220,7 @@
         </section>
 
     </div>
-
+  </main>
     <footer>
         <p>&copy; 2025 Profil Gw Wkwk. All rights reserved.</p>
     </footer>
