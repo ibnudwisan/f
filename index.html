@@ -126,6 +126,26 @@
       flex: 1;
     }
 
+.premium-button {
+    display: block; /* Mengubah menjadi elemen blok untuk berjejer secara vertikal */
+    background: linear-gradient(135deg, #00bcd4, #009688); /* Gradien latar belakang */
+    color: white; /* Warna teks tombol */
+    padding: 8px 16px; /* Padding yang lebih besar untuk ukuran tombol yang lebih besar */
+    font-size: 14px; /* Ukuran font tombol */
+    text-decoration: none; /* Menghapus garis bawah */
+    border-radius: 5px 20px 20px 5px; /* Sudut melengkung: kiri atas dan bawah 5px, kanan atas dan bawah 20px */
+    transition: all 0.3s ease; /* Efek transisi */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek visual */
+    font-weight: bold; /* Menebalkan teks */
+    margin: 10px 0; /* Menambahkan margin vertikal untuk jarak antar tombol */
+    width: fit-content; /* Mengatur lebar tombol agar sesuai dengan konten */
+}
+
+.premium-button:hover {
+    transform: translateY(-1px); /* Efek angkat saat hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam saat hover */
+}
+
     footer {
       background-color: #333;
       color: white;
@@ -178,7 +198,7 @@
     <main>
       <class="container">
         <div class="viewCounter">
-          <i class="fas fa-sync"></i> Terakhir Diperbarui: 7 April 2025 (22:10)
+          <i class="fas fa-sync"></i> Terakhir Diupdate: 8 April 2025 (20:23)
         </div>
 
     <div class="container">
@@ -216,7 +236,9 @@
             <p>Telepon: +62 821 3678 3758</p>
             <p><a href="https://www.facebook.com/share/Qa677pGi3hCKcEJE/" target="_top">fb.me</a></p>
             <p><a href="https://wa.me/6282136783758" target="_blank">chat.me</a></p>
-            <a href="https://mod-modgames.blogspot.com" style="display: inline-block; background-color: cyan; color: black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Cek my Page</a>
+            <a href="https://mod-modgames.blogspot.com" class="premium-button">Cek my Page</a>
+            <a href="https://ibnudwisan.github.io/s" class="premium-button">Cek my Video</a>
+            <a href="https://ibnudwisan.github.io/who/" class="premium-button">Cek my Aplication</a>
         </section>
 
     </div>
