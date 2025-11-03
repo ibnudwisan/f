@@ -14,14 +14,14 @@
     }
 
     body {
-      font-family: Arial, sans-serif, 'Courier New', Courier, monospace;
+      font-family: Arial, sans-serif, 'Courier New', Courier, monospace;  
       margin: 0;
       padding: 0;
       background: linear-gradient(to right, #00bfff, #1e90ff), #f8f8f8;
       /* Gradasi dari biru muda ke biru */
-      color: #000;
+      color: #461dfc;
       /* Warna teks */
-      transition: background 0.6s ease;
+      transition: background 1.5s ease;
       /* Transisi halus untuk perubahan latar belakang */
     }
 
@@ -54,9 +54,12 @@
     }
 
     body.dark {
-       background: black;
-       color: rgb(0, 0, 0);
+      background-color: rgb(0, 0, 0);
+      background: white;
+       color: #2ea11f;
+       text-wrap-style: stable;
     }
+
 
     .MODE {
   position: fixed;
@@ -152,9 +155,12 @@ body.dark .MODE button:hover {
     .about,
     .contact,
     .other,
-    .jadwal,
+    .jadwal,  
     .note {
-      background-color: white;
+      background-color: rgb(255, 255, 255);
+      background-image: url(blackhat.jpg);
+      filter: opacity(1.0);
+      background-size: cover;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -220,7 +226,7 @@ body.dark .MODE button:hover {
       /* Ukuran gambar lebih kecil */
       height: 100px;
       /* Menjaga proporsi gambar */
-      border-radius: 50%;
+      border-radius: 100%;
       /* Menjaga gambar tetap bulat */
       display: block;
       margin: 0 auto 30px auto;
@@ -232,6 +238,35 @@ body.dark .MODE button:hover {
     .about img:hover {
       transform: scale(1.1);
       /* Efek zoom saat hover */
+    }
+    
+    .about p {
+      text-align: justify;
+      /* Rata kiri kanan untuk paragraf */
+      line-height: 1.6;
+      /* Jarak antar baris */
+    }
+
+    .jadwal {
+      background-image: url(hack2.jpg);
+      background-position: left down;
+      background-size: 50% cover;
+    }
+
+    .other {
+      background-image: url(anime1.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .note {
+      background-image: url(hack.jpg);
+      background-size: cover;
+    }
+    .contact {
+      background-image: url(redhat2.png);
+      background-position-x: top, right;
     }
 
     main {
@@ -357,13 +392,13 @@ body.dark .MODE button:hover {
             otodidak.</p>
         </section>
 
-        <section id="other" class="other">
+        <section id="other1" class="other">
           <h2>Information</h2>
-          <p>Nama: Ibnu Dwi S</p>
-          <p>umur: 16th</p>
-          <p>Tanggal lahir: 20 october 2009</p>
-          <p>Hobi: Ngetik/ Ngoding</p>
-          <p>Tujuan: Software Developer/Engineer</p>
+          <p><b>Nama:</b> Ibnu Dwi S</p>
+          <p><b>umur:</b> 16th</p>
+          <p><b>Tanggal lahir:</b> 20 october 2009</p>
+          <p><b>Hobi:</b> Ngetik/ Ngoding</p>
+          <p><b>Tujuan:</b> Software Developer/Engineer</p>
         </section>
 
         <section id="jadwal" class="jadwal">
